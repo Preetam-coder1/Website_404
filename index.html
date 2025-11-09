@@ -109,12 +109,16 @@
     </footer>
 </body>
 <script>
-  document.querySelectorAll("img").forEach((el){
-  if(el.indexOf('/') == 0){
-    el.src = el.src.replace('/', window.location.href + '/');
-  }else{
-    el.src = window.location.href + '/' + el.src;
+  document.querySelectorAll("img").forEach((el) => {
+  const src = el.getAttribute("src");
+  if (src && !src.startsWith("http") && !src.startsWith("//")) {
+    if (src.startsWith("/")) {
+      el.src = window.location.origin + src;
+    } else {
+      el.src = window.location.href.replace(/\/$/, '') + '/' + src;
+    }
   }
-})
+});
 </script>
 </html>
+
