@@ -108,4 +108,13 @@
         <p style="text-align: center";>- "Glad you dropped in!"</p>
     </footer>
 </body>
+<script>
+  document.querySelectorAll("img").forEach((el){
+  if(el.indexOf('/') == 0){
+    el.src = el.src.replace('/', window.location.href + '/');
+  }else{
+    el.src = window.location.href + '/' + el.src;
+  }
+})
+</script>
 </html>
