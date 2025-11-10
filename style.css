@@ -14,40 +14,14 @@ p{
 .orange-highlight{
     color:rgb(45, 43, 180);
 }
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+.half-width{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
 }
-
-.half-width {
-  width: 45%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.half-width img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-@media (max-width: 600px) {
-  .flex-row {
-    flex-direction: column;
-    text-align: center;
-  } /*mobile*/
-
-  .half-width {
+.half-width img{
     width: 100%;
-    padding: 10px 0;
-  }
-
-  .half-width img {
-    max-width: 90%;
-    margin: auto;
-  }
 }
 .top-banner{
     background-image: url("images/top-banner.png");
