@@ -14,10 +14,11 @@ p{
 .orange-highlight{
     color:rgb(45, 43, 180);
 }
-.half-width {
-  width: 45%;
-  padding: 10px;
-  box-sizing: border-box;
+.half-width{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
 }
 .half-width img{
     width: 100%;
@@ -109,20 +110,4 @@ section{
 footer p{
     text-align: center;
     font-size: 20px;
-}
-@media (max-width: 768px) {
-  .flex-row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .half-width {
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .half-width img {
-    max-width: 90%;
-    margin: auto;
-  }
 }
