@@ -97,10 +97,10 @@ section{
   justify-content: center;
   flex-wrap: wrap;
   gap: 3vw;
-  padding: 3vh 2vw;
+  padding: 2vh 2vw;
 }
 .gallery img{
-  width: 25vw;
+  width: 20vw;
   max-width: 80vw;
   height: auto;
   border-radius: 1vw;
@@ -152,3 +152,4 @@ footer p{
     font-size: 3vw;
   }
 }
+
