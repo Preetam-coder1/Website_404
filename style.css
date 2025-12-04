@@ -65,6 +65,7 @@ section{
   font-size: 1.5vw;
   display: inline-block;
   transition: 0.3s;
+  margin: 5px;
 }
 .link-button:hover{
   transform: scale(1.05);
@@ -152,4 +153,5 @@ footer p{
     font-size: 3vw;
   }
 }
+
 
